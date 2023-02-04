@@ -14,7 +14,7 @@
   justify-content:flex-start;
   gap: 2rem;
   align-items: center;
-  text-align: center;
+ 
   background-color: beige;
 }
 
@@ -23,4 +23,21 @@
     flex-direction: column;
     
   }
+}
+h1{
+  margin: 0.5rem;
+
+}
+h4{
+  margin: 0.5rem ;
+}
+article
+{
+  border-radius: 1rem;
+  background-color: antiquewhite;
+}
+img{
+  padding-top: 2rem;
+  margin-left: 3.5rem ;
+ 
 }
