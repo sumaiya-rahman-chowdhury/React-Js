@@ -14,8 +14,9 @@
   justify-content:flex-start;
   gap: 2rem;
   align-items: center;
- 
+ text-align: center;
   background-color: beige;
+  word-wrap: break-word;
 }
 
 @media only screen and (max-width: 740px){
@@ -33,11 +34,17 @@ h4{
 }
 article
 {
-  border-radius: 1rem;
-  background-color: antiquewhite;
+  
+  border:solid 1px red;
+background-color:#3392e6;
 }
-img{
-  padding-top: 2rem;
-  margin-left: 3.5rem ;
- 
+
+p{
+  color: red;
+}
+img {
+  width: 200px;
+  height: auto;
+  margin-top: 0.5rem;
+  display: inline-block;
 }
