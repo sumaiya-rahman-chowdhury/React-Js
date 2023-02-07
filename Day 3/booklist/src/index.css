@@ -34,17 +34,29 @@ h4{
 }
 article
 {
-  
-  border:solid 1px red;
-background-color:#3392e6;
+  width: 200px;
+  height: auto;
+background-color:hsl(208, 66%, 78%);
 }
 
 p{
   color: red;
+  word-wrap: break-word;
+  margin: 0.1rem;
 }
 img {
-  width: 200px;
+  width: 150px;
   height: auto;
   margin-top: 0.5rem;
-  display: inline-block;
+  border: solid rgb(230, 239, 247) 0.2rem;
+}
+.descprition{
+  display: none;
+  color: black;
+}s
+article:hover + .description {
+  display: block;
+  cursor: pointer;
+  width: 200px;
+  height: auto;
 }
