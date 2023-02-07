@@ -11,7 +11,7 @@
   margin: 5rem auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content:flex-start;
+  justify-content:space-between;
   gap: 2rem;
   align-items: center;
  text-align: center;
@@ -36,7 +36,9 @@ article
 {
   width: 200px;
   height: auto;
-background-color:hsl(208, 66%, 78%);
+border: 1px black solid;
+justify-content: space-between;
+margin: 0.8rem;
 }
 
 p{
@@ -49,14 +51,4 @@ img {
   height: auto;
   margin-top: 0.5rem;
   border: solid rgb(230, 239, 247) 0.2rem;
-}
-.descprition{
-  display: none;
-  color: black;
-}s
-article:hover + .description {
-  display: block;
-  cursor: pointer;
-  width: 200px;
-  height: auto;
 }
