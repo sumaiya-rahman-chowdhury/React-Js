@@ -24,6 +24,7 @@
     flex-direction: column;
     
   }
+
 }
 h1{
   margin: 0.5rem;
@@ -34,9 +35,9 @@ h4{
 }
 article
 {
-  width: 200px;
+  width: auto;
   height: auto;
-border: 1px black solid;
+
 justify-content: space-between;
 margin: 0.8rem;
 }
@@ -51,4 +52,11 @@ img {
   height: auto;
   margin-top: 0.5rem;
   border: solid rgb(230, 239, 247) 0.2rem;
+}
+button{
+  padding: 0.1rem;
+  margin: 0.2rem;
+}
+article:hover{
+  border: 1px black solid;
 }
