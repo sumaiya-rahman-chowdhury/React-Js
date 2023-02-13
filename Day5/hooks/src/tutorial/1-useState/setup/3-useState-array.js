@@ -16,6 +16,7 @@ const UseStateArray = () => {
         );
       }) 
     }
+    <button className='btn' onClick={()=>{setPeople([])}}>clear items</button>
     </>
   );
 };
