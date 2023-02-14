@@ -174,7 +174,7 @@ main {
 .person p {
   margin-bottom: 0;
 }
-.container button {
+.btn1 {
   color: var(--clr-white);
   display: block;
   width: 100%;
@@ -187,5 +187,16 @@ main {
   letter-spacing: var(--spacing);
   border-radius: var(--radius);
   outline: 1px solid rgba(242, 138, 178, 0.8);
+  cursor: pointer;
+}
+.btn2{
+  background-color: hsl(337, 78%, 34%);
+  color: aliceblue;
+  width: 100px;
+  height: 20px;
+  border: transparent;
+  box-shadow: rgb(107, 98, 98);
+  text-transform: capitalize;
+  border-radius: var(--radius);
   cursor: pointer;
 }
