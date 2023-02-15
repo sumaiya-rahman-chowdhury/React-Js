@@ -5,7 +5,9 @@ import React, { useState, useEffect } from 'react';
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0);
   useEffect(() => {
-    document.title = `New(${value})`;
+    if(value>2){
+      document.title = `Click(${value})`;
+    }
   });
   return (<><h2>{value}</h2>
   <button className='btn' onClick={()=>setValue(value
