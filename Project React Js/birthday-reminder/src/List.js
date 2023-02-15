@@ -1,11 +1,11 @@
 import React from 'react';
 
-const List = ({ people,removePerson}) => {
+const List = ({ people, removePerson }) => {
 
 
   return (
     <>
-    
+
       {
         people.map((person) => {
           const { id, age, name, image } = person;
@@ -15,7 +15,7 @@ const List = ({ people,removePerson}) => {
               <div>
                 <h4>{name}</h4>
                 <p>{age}</p>
-                <button className='btn2' onClick={()=>removePerson(id)} >remove</button>
+                <button className='btn2' onClick={() => removePerson(id)} >remove</button>
               </div>
             </article>
           )
