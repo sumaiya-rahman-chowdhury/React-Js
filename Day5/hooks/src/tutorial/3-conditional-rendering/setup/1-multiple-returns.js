@@ -15,12 +15,22 @@ const MultipleReturns = () => {
   useEffect(()=>{
     getUser();
   },[]); */
+  
 
   useEffect(() => {
     setisLoadin(true);
     fetch(url)
     .then((resp) =>{
-      resp.json()
+      if(resp.status>=200&&resp.status<=299)
+      {
+        return resp.json();
+      }
+      else
+      {
+        setisLoadin(false)
+        setError(true)
+      }
+      
     })
     .then((user)=> {
       const {login} = user;
