@@ -29,6 +29,7 @@ const MultipleReturns = () => {
       {
         setisLoadin(false)
         setError(true)
+        throw new Error(resp.statusText);
       }
       
     })
