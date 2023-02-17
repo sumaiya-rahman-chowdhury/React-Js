@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 const ShowHide = () => {
   const [show, setShow] = useState(false);
+  useEffect(()=>{
+    document.title="show/hide";
+  },[]);
 
   return (
     <>

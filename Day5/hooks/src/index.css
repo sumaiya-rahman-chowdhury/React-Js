@@ -220,6 +220,9 @@ p {
   padding: 1rem 2rem;
   border-radius: var(--radius);
 }
+label{
+  font-weight: bold;
+}
 .form input {
   background: var(--clr-grey-10);
   border-color: transparent;
@@ -228,7 +231,7 @@ p {
 }
 .form-control {
   margin: 0.5rem 0;
-  display: grid;
+  display:grid;
   grid-template-columns: 100px 1fr;
   align-items: center;
 }
