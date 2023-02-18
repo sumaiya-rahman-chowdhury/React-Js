@@ -6,16 +6,32 @@ import React, { useEffect, useState } from 'react';
 // value, onChange
 
 const ControlledInputs = () => {
-  const [people,setPeople]=useState("");
+  const [people, setPeople] = useState([]);
   const [firstname, setFirstname] = useState("");
   const [email, setEmail] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (firstname && email) {
+      const person = {
+        id: new Date().getTime().toString(),
+        firstname: firstname, email: email
+      };
+      setPeople((people) => {
+        return [...people, person];
+      });
+      console.log('submit the form');
+      setFirstname('');
+      setEmail('');
+    }
+    else {
+      console.log('empty');
+    }
   };
   useEffect(() => {
     document.title = "Form";
   });
-  return <>
+  return (
+  <>
     <article>
       <form className='form' onSubmit={handleSubmit}>
         <div className='form-control'>
@@ -35,8 +51,19 @@ const ControlledInputs = () => {
           add person</button>
 
       </form>
+      {
+        people.map((person, index) => {
+          const { id, firstname, email } = person;
+          return (
+            <div className='item'>
+              <h4>{firstname}</h4>
+              <p>{email}</p>
+            </div>
+          );
+        })}
     </article>
-  </>;
+  </>
+  );
 };
 
 export default ControlledInputs;
