@@ -49,6 +49,7 @@ const ControlledInputs = () => {
         </div>
         <button type='submit' onClick={handleSubmit}>
           add person</button>
+          <button className='form button' onClick={()=>setPeople([])}>remove</button>
 
       </form>
       {

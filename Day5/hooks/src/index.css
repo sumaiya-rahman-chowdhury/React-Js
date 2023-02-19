@@ -246,6 +246,7 @@ label{
   text-transform: capitalize;
   border-radius: var(--radius);
   cursor: pointer;
+  margin-right: 0.5rem;
 }
 .nav-links {
   max-width: var(--fixed-width);
