@@ -213,7 +213,7 @@ p {
   color: var(--clr-red-dark);
 }
 .form {
-  background: var(--clr-white);
+  background: pink;
   max-width: var(--fixed-width);
   margin: 0 auto;
   margin-bottom: 4rem;
@@ -237,7 +237,7 @@ label{
 }
 .form button {
   display: inline-block;
-  background: var(--clr-black);
+  background: #2590e7;
   color: var(--clr-white);
   border-color: transparent;
   margin-top: 1rem;
