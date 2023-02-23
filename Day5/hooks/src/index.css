@@ -171,7 +171,7 @@ p {
   color: var(--clr-primary-5);
 }
 .item {
-  background: var(--clr-white);
+  background: pink;
   display: flex;
   justify-content: space-between;
   max-width: var(--fixed-width);
